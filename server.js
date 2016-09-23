@@ -11,6 +11,12 @@ app.get('/', function (req, res) {
 app.get('/article-one', function (req, res) {
   res.send("Article one request will be send");
 });
+app.get('/article-two', function (req, res) {
+  res.send("Article Two request will be send");
+});
+app.get('/article-three', function (req, res) {
+  res.send("Article Three request will be send");
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
